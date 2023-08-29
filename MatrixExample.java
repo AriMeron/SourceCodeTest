@@ -13,13 +13,13 @@ public class MatrixExample {
         };
 
         int numRows = 6;
-        int numCols = 6;
+        int numCols = 7;
 
         int[][] matrix2 = generateRandomMatrix(numRows, numCols);
         int[][] result = multiplyMatrices(matrix, matrix2);
 
         System.out.println("result length: " + result.length + " x " + result[0].length);
-        for (int i = 0; i < result.length - 1; i++) {
+        for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result[i].length; j++) {
                 System.out.print(result[i][j] + " ");
             }
